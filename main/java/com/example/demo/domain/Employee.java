@@ -7,43 +7,51 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor
 @AllArgsConstructor
-public class Employee implements java.io.Serializable {
+public class Employee {
     private int id;
-    private String name;
-    private int age;
-    private int salary;
+    private String employee_name;
+    private int employee_salary;
+    private int employee_age;
     private String profile_image;
 
     public int getId() {
         return id;
     }
 
+    public String getProfile_image() {
+        return profile_image;
+    }
+
+    public void setProfile_image(String profile_image) {
+        this.profile_image = profile_image;
+    }
+
     public void setId(int id) {
         this.id = id;
     }
 
-    public String getName() {
-        return name;
+    public String getEmployee_name() {
+        return employee_name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEmployee_name(String employee_name) {
+        this.employee_name = employee_name;
     }
 
-    public int getAge() {
-        return age;
+    public int getEmployee_age() {
+        return employee_age;
     }
 
-    public void setAge(int age) {
-        this.age = age;
+    public void setEmployee_age(int employee_age) {
+        this.employee_age = employee_age;
     }
 
-    public int getSalary() {
-        return salary;
+    public int getEmployee_salary() {
+        return employee_salary;
     }
 
-    public void setSalary(int salary) {
-        this.salary = salary;
+    public void setEmployee_salary(int employee_salary) {
+        this.employee_salary = employee_salary;
     }
 
 }

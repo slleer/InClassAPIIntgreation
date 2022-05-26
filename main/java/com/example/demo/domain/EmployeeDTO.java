@@ -15,8 +15,8 @@ public class EmployeeDTO {
 
     public EmployeeDTO(Employee employee) {
         this.id = employee.getId();
-        this.name  = employee.getName();
-        this.age = employee.getAge();
-        this.salary = employee.getSalary();
+        this.name  = employee.getEmployee_name();
+        this.age = employee.getEmployee_age();
+        this.salary = employee.getEmployee_salary();
     }
 }
